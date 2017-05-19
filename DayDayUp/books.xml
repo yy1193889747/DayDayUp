@@ -1,0 +1,26 @@
+<FANAData>
+	<File1>
+		<Type>book</Type>
+		<name>Who I ama</name>
+		<author>cy</author>
+		<fcode>3</fcode>
+		<structure>
+			<ObjectInfo>
+				<name>Who I ama</name>
+				<chapter>第一章</chapter>
+				<desc></desc>
+			</ObjectInfo>
+			<ObjectInfo>
+				<name>Who I ama</name>
+				<chapter>第二章</chapter>
+				<desc>第二章的简介</desc>
+			</ObjectInfo>
+		</structure>
+	</File1>
+	<File1>
+		<Type>bom</Type>
+		<name>Who I ama</name>
+		<author>cy</author>
+		<fcode>1</fcode>
+	</File1>
+</FANAData>
