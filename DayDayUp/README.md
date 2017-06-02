@@ -8,3 +8,7 @@
 ## 2017/5/22
 
 阶乘递归，与普通逻辑对比。感觉还是普通逻辑好用些。
+
+## 2017/6/2
+
+"null".equals(str) 和 str.equals("null") 不一样  jsontest

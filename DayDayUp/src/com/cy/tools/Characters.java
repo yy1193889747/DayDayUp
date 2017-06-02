@@ -1,15 +1,16 @@
 package com.cy.tools;
 
+import java.util.Date;
 import java.util.Random;
 
 public class Characters {
 
     public static void main(String[] args) {
 
-	String str = "";
+	String str = "123";
 
 	System.out.println("中文首字母：" + getPYIndexStr(str, true));
-
+	System.out.println(String.format("%ty%tm%td", new Date(), new Date(), new Date()));
     }
 
     /**
