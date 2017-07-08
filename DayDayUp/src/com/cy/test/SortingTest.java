@@ -1,5 +1,7 @@
 package com.cy.test;
 
+import java.time.Instant;
+
 /**
  * @Title: SortingTest
  * @Description: 排序算法学习
@@ -9,8 +11,20 @@ package com.cy.test;
 public class SortingTest {
 
     public static void main(String[] args) {
-	int a[] = { 1, 54, 6, 3 };
-	selectSort(a);
+	int a[] = { 1, 54, 6, 3, 33, 31, 233, 332, 53, 313, 334, 362, 313 };
+	long start = System.currentTimeMillis();
+	long sss = System.nanoTime();
+	Instant now = Instant.now().plusNanos(3);
+	Instant later = now.plusSeconds(3);
+	Instant earlier = now.plusNanos(3);
+	bubbleSort(a);
+	long time = System.currentTimeMillis() - start;
+	long ssss = System.nanoTime() - sss;
+	System.out.println(time);
+	System.out.println(ssss);
+	System.out.println(now);
+	System.out.println(later);
+	System.out.println(earlier);
     }
 
     // 简单选择排序
