@@ -32,4 +32,8 @@ https://github.com/yy1193889747/DayDayUp.git   地址保存下方便以后直接
 ## 2017/7/19	   
 
 reverse engineers	逆向工程师   好好学单词，早日与世界接轨    
+
+## 2017/7/24
+
+学习了简单的UDP通信
 	   
