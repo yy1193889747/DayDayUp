@@ -17,7 +17,8 @@ public class SortingTest {
 	Instant now = Instant.now().plusNanos(3);
 	Instant later = now.plusSeconds(3);
 	Instant earlier = now.plusNanos(3);
-	bubbleSort(a);
+
+	System.out.println(atoi("+"));
 	long time = System.currentTimeMillis() - start;
 	long ssss = System.nanoTime() - sss;
 	System.out.println(time);
@@ -68,4 +69,62 @@ public class SortingTest {
 	}
     }
 
+    // 我自己的找最大值
+    public static int maxProfit(int[] A) {
+
+	int tmp = 0;
+	for (int i = 0; i < A.length - 1; i++) {
+
+	    if (tmp <= A[i + 1]) {
+
+		tmp = A[i + 1];
+	    }
+
+	}
+	return tmp;
+    }
+
+    // 转换字符串到整数
+    public static int atoi(String str) {
+	// write your code here
+	String s = "";
+	try {
+	    str = str.trim();
+	    System.out.println(str);
+
+	    for (int i = 0; i < str.length(); i++) {
+
+		if (i == 0) {
+		    if (str.substring(i, i + 1).matches("[0-9]|[-|+]")) {
+			s = s.concat(str.substring(i, i + 1));
+		    } else {
+			return 0;
+		    }
+		} else {
+		    if (str.substring(i, i + 1).matches("[0-9]")) {
+			s = s.concat(str.substring(i, i + 1));
+		    } else {
+			break;
+		    }
+		}
+	    }
+	    if ((s.startsWith("-") || s.startsWith("+")) && s.length() <= 1) {
+		return 0;
+	    }
+	    long a = Long.valueOf(s);
+	    if (a > 2147483647) {
+		return 2147483647;
+	    }
+	    if (a < -2147483648) {
+		return -2147483648;
+	    }
+	    return Integer.valueOf(s);
+
+	} catch (Exception e) {
+	    if (s.startsWith("-")) {
+		return -2147483648;
+	    }
+	    return 2147483647;
+	}
+    }
 }
